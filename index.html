@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> VUE 5º ENTREGA VERONICA LARA </title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="text center" v-bind:class="">
+
+	<!--Crea un input dónde el usuario pueda elegir un color. Cuando ese color sea elegido, aplícalo al body. Esto es todo.-->
+	
+
+	<div id="app" v-bind:style="{background: color}">
+		<h1> Prueba un color </h1>
+		<div class="color">
+			
+			<input type="text" v-bind:style= "{color:color}" v-model= "color" maxlength="7" placeholder="#000000">
+
+			<input type="color"v-model="color"> 
+		</div>
+		
+	</div>
+
+		
+	
+</body>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+
+<script>
+
+	new Vue ({
+		el: '#app',
+		data:{color:" "}
+	});
+
+
+</script>
+
+
+</style>
+
+</html>
